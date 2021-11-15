@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection{
+  background-color: #27ae61;
+}
+
+body{
+    background: hsl(211deg 28% 25%);
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  font-family: "Arial Rounded", "poppins";
+  margin-top: 50px;
+  background-color: hsl(210deg 29% 29%);
+  border-radius: 60px;
+  color: hsl(120deg 100% 100%);
+} 
+
+.box {
+  border: 2px solid hsl(210deg 22% 35%);
+  font-size: 8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  font-size: 9vw;
+  background-color: hsl(211deg 28% 25%);
+  transition: 0.25s;
+}
+
+.boxtext {
+  font-family: 'arial rounded';
+}
+
+.gameInfo {
+  padding: 0 34px;
+  font-family: "poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 116px;
+  margin-top: 90px;
+  color: hsl(120deg 100% 100%);
+}
+
+.info{
+    font-size: 1.5em;
+}
+
+.imgbox{
+    margin-top: 40px;
+}
+
+.imgbox img {
+  width: 0%;
+  transition: width 1s ease-in-out;
+}
+
+.reset {
+  cursor: pointer;
+}
+
+/* <---------------Utility Classes----------------!> */
+
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+
+.txtContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset {
+  cursor: pointer;
+  margin: 05px 23px;
+  padding: 1px 10px;
+  background-color: #27ae61;
+  border-radius: 3px;
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: 'poppins';
+  border: none;
+  color: #fff;
+  display: none;
+}
