@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 ::selection{
   background-color: #27ae61;
 }
@@ -109,4 +110,20 @@ body{
   border: none;
   color: #fff;
   display: none;
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'poppins';
+  width: 100%;
+  background-color: #27ae61;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+.fa-fire{
+  color: #fff;
 }
